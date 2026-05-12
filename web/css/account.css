@@ -1,0 +1,48 @@
+.account-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.account-container h2 {
+    text-align: center;
+    color: #ff8c00;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.submission-card {
+    border-left: 5px solid #ffaa2d;
+    background: #fafafa;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.submission-header .title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.status {
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.status.принято {
+    color: green;
+}
+
+.status.отклонено {
+    color: red;
+}
+
+.status.рассмотрение {
+    color: #ffaa2d;
+}

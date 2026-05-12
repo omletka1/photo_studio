@@ -1,0 +1,104 @@
+.rules-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    color: #000;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.rules-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.rules-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.rules-divider {
+    border-top: 3px solid #ffaa2d;
+    margin: 30px 0;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rules-section {
+    margin-bottom: 40px;
+}
+
+.rules-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.rules-section h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 25px 0 15px;
+    color: #ffaa2d;
+}
+
+.rules-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.rules-list li {
+    margin-bottom: 15px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.rules-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #ffaa2d;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.nomination-tag {
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 7px 16px;
+    margin: 6px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.submit-btn {
+    display: block;
+    width: 300px;
+    margin: 50px auto 0;
+    background-color: #ffaa2d;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #e69500;
+    box-shadow: 0 6px 15px rgba(255, 170, 45, 0.4);
+}

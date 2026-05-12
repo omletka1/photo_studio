@@ -1,0 +1,89 @@
+.login-container {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.login-divider {
+    border-top: 2px solid #000;
+    margin: 25px 0;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #000;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+.login-btn {
+    background-color: #ffaa2d;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #e69500;
+}
+
+.remember-me {
+    margin: 20px 0;
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.signup-link a {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.signup-link a:hover {
+    color: #ffaa2d;
+}

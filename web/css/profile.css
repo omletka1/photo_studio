@@ -1,0 +1,97 @@
+body {
+    background-color: #000;
+}
+
+.portfolio-form {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-divider {
+    border-top: 3px solid #ffaa2d;
+    width: 80px;
+    margin: 20px auto;
+}
+
+.form-group label {
+    color: #ffaa2d;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #ffaa2d;
+    box-shadow: 0 0 8px rgba(255, 170, 45, 0.4);
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Оранжевая обводка при фокусе */
+.portfolio-form input:focus,
+.portfolio-form textarea:focus {
+    border-color: #ffaa2d !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 170, 45, 0.25) !important;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #ffaa2d;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #e38c0f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 170, 45, 0.3);
+}
+
+.alert {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}

@@ -1,0 +1,119 @@
+
+.portfolio-form {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.form-divider {
+    border-top: 3px solid #ffaa2d;
+    width: 80px;
+    margin: 20px auto;
+}
+.table-custom thead th a {
+    color: #ffaa2d !important;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.table-custom thead th a:hover {
+    color: #e38c0f !important;
+    text-decoration: underline;
+}
+.form-group label {
+    display: block;
+    color: #ffaa2d;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    appearance: none;
+    background-image: none;
+}
+
+select.form-control {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 15px;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #ffaa2d;
+    box-shadow: 0 0 8px rgba(255, 170, 45, 0.4);
+}
+
+.submit-btn {
+    background-color: #ffaa2d;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #e38c0f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 170, 45, 0.3);
+}
+
+.table-admin {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    font-size: 16px;
+}
+
+.table-admin th,
+.table-admin td {
+    padding: 12px 15px;
+    border: 2px solid #000;
+    vertical-align: middle;
+}
+
+.table-admin th {
+    background-color: #f8f8f8;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.table-admin tr:hover {
+    background-color: #fffaf5;
+    transition: background-color 0.3s ease;
+}

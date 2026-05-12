@@ -1,0 +1,145 @@
+.admin-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.admin-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.admin-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.admin-divider {
+    border-top: 3px solid #ffaa2d;
+    width: 80px;
+    margin: 0 auto;
+}
+
+.admin-create-btn {
+    background-color: #ffaa2d;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.admin-create-btn:hover {
+    background-color: #e38c0f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255,170,45,0.3);
+    text-decoration: none;
+    color: #fff;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    background-color: #f8f8f8;
+    color: #000;
+    padding: 15px;
+    text-align: left;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-bottom: 2px solid #000;
+}
+
+.admin-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.admin-table tr:hover {
+    background-color: #fffaf5;
+}
+
+.admin-action-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.admin-edit-btn {
+    background-color: #ffaa2d;
+    color: #fff;
+    border: none;
+}
+
+.admin-edit-btn:hover {
+    background-color: #e38c0f;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.admin-delete-btn {
+    background-color: #f8f8f8;
+    color: #ff6b6b;
+    border: 1px solid #ff6b6b;
+}
+
+.admin-delete-btn:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+}
+.admin-table th a {
+    color: #ffaa2d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.admin-table th a:hover {
+    color: #e38c0f;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 20px;
+    }
+
+    .admin-header h1 {
+        font-size: 28px;
+    }
+
+    .admin-table th,
+    .admin-table td {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .admin-action-btn {
+        padding: 6px 10px;
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+}

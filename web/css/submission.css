@@ -1,0 +1,135 @@
+body {
+    background-color: #000000;
+}
+.portfolio-form {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+:root {
+    --accent-color: #ffaa2d;
+}
+
+/* Акцентная линия */
+.form-divider {
+    border-top: 3px solid var(--accent-color);
+    width: 80px;
+    margin: 25px auto;
+}
+
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: var(--accent-color);
+}
+.form-control:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 8px rgba(255, 170, 45, 0.4);
+}
+
+
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+select.form-control {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 15px;
+}
+
+/* Стили для загрузки файлов */
+.file-input-container {
+    border: 2px dashed #000;
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.file-input-label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Стили для кнопки */
+.submit-btn {
+    background-color: #ffaa2d;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+
+}
+
+.submit-btn:hover {
+    background-color: #e38c0f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 170, 45, 0.3);
+}
+
+/* Стили для превью изображений */
+.image-previews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.image-preview {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #000;
+}
+.portfolio-form:hover {
+    background-color: #fffaf5;
+    transition: background-color 0.4s;
+}

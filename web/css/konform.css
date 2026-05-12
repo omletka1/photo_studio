@@ -1,0 +1,117 @@
+.contest-form-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    transition: background-color 0.4s;
+}
+
+.contest-form-container:hover {
+    background-color: #fffaf5;
+}
+
+.contest-form-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contest-form-header h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffaa2d;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.contest-form-divider {
+    border-top: 3px solid #ffaa2d;
+    width: 80px;
+    margin: 0 auto 30px;
+}
+
+.contest-form-group {
+    margin-bottom: 25px;
+}
+
+.contest-form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #ffaa2d;
+    text-transform: uppercase;
+}
+
+.contest-form-control {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    transition: all 0.3s;
+}
+
+.contest-form-control:focus {
+    outline: none;
+    border-color: #ffaa2d;
+    box-shadow: 0 0 8px rgba(255,170,45,0.4);
+}
+
+textarea.contest-form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+select.contest-form-control {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='black'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 15px;
+}
+
+.contest-submit-btn {
+    background-color: #ffaa2d;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+.contest-submit-btn:hover {
+    background-color: #e38c0f;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255,170,45,0.3);
+}
+
+@media (max-width: 768px) {
+    .contest-form-container {
+        padding: 20px;
+    }
+
+    .contest-form-header h1 {
+        font-size: 28px;
+    }
+
+    .contest-form-control {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+
+    .contest-submit-btn {
+        padding: 12px 20px;
+        font-size: 16px;
+    }
+}

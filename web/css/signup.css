@@ -1,0 +1,112 @@
+
+.registration-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+.registration-title {
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    transition: all 0.3s ease;
+}
+
+
+.registration-description {
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.form-control {
+    background-color: white;
+    border: 1px solid #ddd;
+    color: #333 !important;
+    transition: all 0.3s ease;
+}
+
+.form-control::placeholder {
+    color: #999 !important;
+}
+
+.form-control:focus {
+    background-color: white;
+    border-color: #ffaa2d;
+    box-shadow: 0 0 0 0.2rem rgba(255, 170, 45, 0.25);
+    color: #333 !important;
+}
+
+.form-group fieldset {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.form-check {
+    margin: 20px 0;
+}
+
+.form-check-input {
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.form-check-label {
+    color: #333 !important;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.form-check:hover .form-check-label {
+    color: #ffaa2d !important;
+}
+
+.btn-register {
+    background-color: #ffaa2d;
+    color: white !important;
+    font-weight: bold;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-register:hover {
+    background-color: #ff9500;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 170, 45, 0.4);
+}
+
+.btn-register:active {
+    transform: translateY(0);
+}
+.form-group fieldset::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffaa2d;
+    transition: width 0.3s ease;
+}
+
+.form-group:hover fieldset::after {
+    width: 100%;
+}

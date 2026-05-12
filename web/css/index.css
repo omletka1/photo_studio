@@ -1,0 +1,234 @@
+
+:root {
+    --accent: #ffaa2d;
+    --accent-dark: #cc8800;
+    --bg-light: #fffaf5;
+    --text-dark: #333;
+    --shadow: rgba(255,170,45,0.2);
+    --shadow-hover: rgba(255,170,45,0.35);
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    font-family: var(--font-primary);
+    background: var(--bg-light);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    position: relative;
+    background: linear-gradient(135deg, #ffaa2d 0%, #fffaf5 100%);
+    color: black;
+    text-align: center;
+    padding: 140px 20px 100px;
+    overflow: hidden;
+    border-radius: 0 0 60px 60px;
+    box-shadow: 0 15px 40px var(--shadow);
+}
+.hero h1 {
+    font-size: 56px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+.hero p {
+    font-size: 20px;
+    max-width: 650px;
+    margin: 0 auto 40px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.hero a {
+    background-color: var(--accent);
+    color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 18px 50px;
+    border-radius: 40px;
+    box-shadow: 0 8px 15px var(--shadow);
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+}
+.hero a:hover {
+    background-color: var(--accent-dark);
+    box-shadow: 0 10px 25px var(--shadow-hover);
+    transform: translateY(-3px);
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: var(--accent);
+    text-align: center;
+    margin: 100px 0 40px;
+    position: relative;
+}
+.section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 5px;
+    background: var(--accent);
+    margin: 20px auto 0;
+    border-radius: 3px;
+}
+
+.konkurs-list {
+    display: grid;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+}
+.konkurs-card {
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 15px 30px var(--shadow);
+    padding: 30px 35px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+.konkurs-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 40px var(--shadow-hover);
+}
+.konkurs-card h3 {
+    font-size: 26px;
+    color: var(--accent);
+    margin-bottom: 15px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.konkurs-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.konkurs-card .dates {
+    font-weight: 600;
+    color: var(--accent-dark);
+    margin-bottom: 10px;
+}
+.konkurs-card .status {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--accent);
+    color: black;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: 0 3px 10px var(--shadow);
+}
+
+.nomination-list {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 30px;
+}
+.nomination-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 12px 25px var(--shadow);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+    display: flex;
+    flex-direction: column;
+}
+.nomination-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 25px 40px var(--shadow-hover);
+}
+.nomination-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: filter 0.3s ease;
+}
+.nomination-card:hover img {
+    filter: brightness(0.9);
+}
+.nomination-card h3 {
+    color: var(--accent);
+    font-weight: 900;
+    font-size: 22px;
+    margin: 18px 20px 10px;
+}
+.nomination-card p {
+    flex-grow: 1;
+    padding: 0 20px 25px 20px;
+    color: #444;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.lightbox-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    cursor: zoom-out;
+}
+.lightbox-overlay.active {
+    display: flex;
+}
+.lightbox-overlay img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgba(255,170,45,0.7);
+}
+
+.extra-info {
+    max-width: 900px;
+    background: white;
+    margin: 120px auto 80px;
+    padding: 50px 40px;
+    border-radius: 40px;
+    box-shadow: 0 15px 40px var(--shadow);
+    text-align: center;
+}
+.extra-info h2 {
+    font-weight: 900;
+    font-size: 32px;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+.extra-info p {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+    .section-title {
+        font-size: 28px;
+    }
+    .konkurs-card h3 {
+        font-size: 22px;
+    }
+    .nomination-card h3 {
+        font-size: 20px;
+    }
+}
